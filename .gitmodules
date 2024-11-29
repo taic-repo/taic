@@ -1,0 +1,3 @@
+[submodule "taic-qemu"]
+	path = taic-qemu
+	url = https://github.com/taic-repo/taic-qemu.git
