@@ -1,0 +1,9 @@
+[profile.dev]
+lto = true
+
+[profile.release]
+lto = true
+
+[workspace]
+members = ["apps/indices_test" ]
+resolver = "2"

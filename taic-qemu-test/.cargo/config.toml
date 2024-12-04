@@ -1,0 +1,6 @@
+[build]
+target = "riscv64gc-unknown-none-elf"
+target-dir = "./target"
+
+[env]
+AX_WORK_DIR = { value = ".", relative = true }
