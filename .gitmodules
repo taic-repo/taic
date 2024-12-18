@@ -1,3 +1,6 @@
 [submodule "taic-qemu"]
 	path = taic-qemu
 	url = https://github.com/taic-repo/taic-qemu.git
+[submodule "taic-rocket-chip"]
+	path = taic-rocket-chip
+	url = https://github.com/taic-repo/taic-rocket-chip.git
