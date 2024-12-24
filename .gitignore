@@ -1,2 +1,5 @@
 target
 *.lds
+*.bin
+*.elf
+Cargo.lock

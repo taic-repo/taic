@@ -129,6 +129,7 @@ dependencies = [
  "axhal",
  "axlog",
  "axruntime",
+ "axtask",
 ]
 
 [[package]]
@@ -200,7 +201,9 @@ dependencies = [
  "axtask",
  "cfg-if",
  "crate_interface",
+ "kernel_guard",
  "lazy_init",
+ "percpu",
 ]
 
 [[package]]

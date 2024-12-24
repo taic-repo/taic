@@ -5,5 +5,5 @@ lto = true
 lto = true
 
 [workspace]
-members = ["apps/indices_test" ]
+members = ["apps/taic_test" ]
 resolver = "2"
