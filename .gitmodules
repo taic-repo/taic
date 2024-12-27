@@ -7,3 +7,4 @@
 [submodule "opensbi"]
 	path = opensbi
 	url = https://github.com/zflcs/opensbi.git
+	ignore = dirty
