@@ -36,7 +36,7 @@ LOG ?= off
 V ?=
 LIBC_DIR = tools/axlibc
 # App options
-A ?= apps/indices_test
+A ?= apps/taic_test
 APP ?= $(A)
 FEATURES ?=
 APP_FEATURES ?=

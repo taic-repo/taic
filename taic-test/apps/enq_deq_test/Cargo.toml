@@ -1,0 +1,13 @@
+[package]
+name = "enq_deq_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axstd = { git = "https://github.com/Starry-OS/axstd.git", features = ["paging", "alloc"] }
+axconfig = { git = "https://github.com/Starry-OS/axconfig.git" }
+log = "0.4"
+taic-driver = { path = "../../../taic-driver" }
+riscv = { git = "https://github.com/duskmoon314/riscv", branch = "extN", features = [
+    "inline-asm",
+] }

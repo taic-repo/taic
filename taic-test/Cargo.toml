@@ -1,0 +1,12 @@
+[patch."https://github.com/Starry-OS/axtrap.git".axtrap]
+path = "crates/axtrap"
+
+[profile.dev]
+lto = true
+
+[profile.release]
+lto = true
+
+[workspace]
+members = [ "apps/enq_deq_test","apps/taic_test"]
+resolver = "2"
