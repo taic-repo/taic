@@ -3,3 +3,6 @@ target
 *.bin
 *.elf
 Cargo.lock
+.metals
+.scala-build
+.vscode
