@@ -9,3 +9,6 @@
 	path = opensbi
 	url = https://github.com/zflcs/opensbi.git
 	ignore = dirty
+[submodule "async-os"]
+	path = async-os
+	url = https://github.com/AsyncModules/async-os.git
