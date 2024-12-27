@@ -4,3 +4,6 @@
 [submodule "taic-rocket-chip"]
 	path = taic-rocket-chip
 	url = https://github.com/taic-repo/taic-rocket-chip.git
+[submodule "opensbi"]
+	path = opensbi
+	url = https://github.com/zflcs/opensbi.git
