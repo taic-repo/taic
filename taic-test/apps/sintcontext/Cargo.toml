@@ -1,0 +1,13 @@
+[package]
+name = "sintcontext"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axstd = { git = "https://github.com/Starry-OS/axstd.git", features = ["paging", "alloc", "irq"] }
+log = "0.4"
+riscv = { git = "https://github.com/duskmoon314/riscv", branch = "extN", features = [
+    "inline-asm",
+] }
+axhal = { git = "https://github.com/Starry-OS/axhal.git" }
+lazy_init = { git = "https://github.com/Starry-OS/lazy_init.git" }

@@ -1,0 +1,26 @@
+[package]
+name = "user_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axstarry = { git = "https://github.com/Starry-OS/axstarry.git", default-features = false, features = [
+    "paging",
+    "irq",
+    "multitask",
+] }
+axfeat = { git = "https://github.com/Starry-OS/axfeat.git", features = [
+    "bus-mmio",
+    "img",
+] }
+axtrap = { git = "https://github.com/Starry-OS/axtrap.git", features = [
+    "monolithic",
+] }
+axlog = { git = "https://github.com/Starry-OS/axlog.git" }
+linux_syscall_api = { git = "https://github.com/Starry-OS/linux_syscall_api.git" }
+axprocess = { git = "https://github.com/Starry-OS/axprocess.git" }
+axconfig = { git = "https://github.com/Starry-OS/axconfig.git" }
+riscv = { git = "https://github.com/duskmoon314/riscv", branch = "extN", features = [
+    "inline-asm",
+] }
+axhal = { git = "https://github.com/Starry-OS/axhal.git" }

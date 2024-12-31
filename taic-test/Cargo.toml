@@ -1,5 +1,8 @@
+[patch."https://github.com/Starry-OS/axhal.git".axhal]
+path = "modules/axhal"
+
 [patch."https://github.com/Starry-OS/axtrap.git".axtrap]
-path = "crates/axtrap"
+path = "modules/axtrap"
 
 [profile.dev]
 lto = true
@@ -8,5 +11,12 @@ lto = true
 lto = true
 
 [workspace]
-members = ["apps/enq_deq_test", "apps/taic_test"]
+members = [
+    "apps/enq_deq_test",
+    "apps/sextint_latency",
+    "apps/sintcontext",
+    "apps/ssoftint_latency",
+    "apps/user_test",
+    "utestcases",
+]
 resolver = "2"

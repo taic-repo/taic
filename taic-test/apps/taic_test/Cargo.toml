@@ -1,8 +1,0 @@
-[package]
-name = "indices_test"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-axstd = { git = "https://github.com/Starry-OS/axstd.git", features = ["paging", "irq"] }
-axconfig = { git = "https://github.com/Starry-OS/axconfig.git" }

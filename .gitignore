@@ -6,3 +6,6 @@ Cargo.lock
 .metals
 .scala-build
 .vscode
+*.log
+*.asm
+*.img
