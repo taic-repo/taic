@@ -12,3 +12,6 @@
 [submodule "async-os"]
 	path = async-os
 	url = https://github.com/AsyncModules/async-os.git
+[submodule "taic-pac"]
+	path = taic-pac
+	url = https://github.com/taic-repo/taic-pac.git
