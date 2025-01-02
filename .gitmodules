@@ -14,3 +14,7 @@
 [submodule "taic-driver"]
 	path = taic-driver
 	url = https://github.com/taic-repo/taic-driver.git
+[submodule "opensbi"]
+	path = opensbi
+	url = https://github.com/taic-repo/opensbi.git
+	ignore = dirty
