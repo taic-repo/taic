@@ -5,10 +5,6 @@
 	path = taic-rocket-chip
 	url = https://github.com/taic-repo/taic-rocket-chip.git
 	ignore = dirty
-[submodule "opensbi"]
-	path = opensbi
-	url = https://github.com/zflcs/opensbi.git
-	ignore = dirty
 [submodule "async-os"]
 	path = async-os
 	url = https://github.com/AsyncModules/async-os.git
