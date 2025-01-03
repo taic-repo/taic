@@ -18,3 +18,6 @@
 	path = opensbi
 	url = https://github.com/taic-repo/opensbi.git
 	ignore = dirty
+[submodule "linux-img"]
+	path = linux-img
+	url = https://github.com/taic-repo/linux-img.git
