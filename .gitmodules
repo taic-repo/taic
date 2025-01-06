@@ -21,3 +21,6 @@
 [submodule "linux-img"]
 	path = linux-img
 	url = https://github.com/taic-repo/linux-img.git
+[submodule "ipc-bench"]
+	path = ipc-bench
+	url = https://github.com/taic-repo/ipc-bench.git
