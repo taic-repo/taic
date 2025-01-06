@@ -3,7 +3,7 @@
 use lazy_init::LazyInit;
 use taic_driver::{LocalQueue, Taic};
 
-const LQ_NUM: usize = 2;
+const LQ_NUM: usize = 8;
 const TAIC_BASE: usize = 0x100_0000;
 const TAIC: Taic = Taic::new(TAIC_BASE, LQ_NUM);
 static mut START: usize = 0;

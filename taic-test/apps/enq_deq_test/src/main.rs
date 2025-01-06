@@ -8,7 +8,7 @@ use axstd::println;
 use taic_driver::Taic;
 
 const TAIC_BASE: usize = axconfig::PHYS_VIRT_OFFSET + axconfig::MMIO_REGIONS[1].0;
-const LQ_NUM: usize = 2;
+const LQ_NUM: usize = 8;
 
 const TAIC: Taic = Taic::new(TAIC_BASE, LQ_NUM);
 const NUM: usize = 10_0000;
@@ -34,4 +34,3 @@ fn main() {
     println!("---------------------------------");
     println!("Deq cycles: {:?}", deq_cycles);
 }
-

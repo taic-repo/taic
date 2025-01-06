@@ -1,6 +1,6 @@
 use taic_driver::Taic;
 
-const LQ_NUM: usize = 2;
+const LQ_NUM: usize = 8;
 const TAIC_BASE: usize = 0x100_0000;
 const TAIC: Taic = Taic::new(TAIC_BASE, LQ_NUM);
 const NUM: usize = 10_0000;
