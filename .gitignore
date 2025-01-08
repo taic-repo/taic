@@ -2,7 +2,7 @@ target
 *.lds
 *.bin
 *.elf
-Cargo.lock
+# Cargo.lock
 .metals
 .scala-build
 .vscode
