@@ -10,6 +10,7 @@ define build_payload
 	@sed -i "/FW_PAYLOAD_PATH=/d" $(OPENSBI_OBJMK)
 	@echo "FW_PAYLOAD_PATH=../$(LOAD)" >> $(OPENSBI_OBJMK)
 	make -C opensbi PLATFORM=$(PLATFORM) CROSS_COMPILE=riscv64-linux-musl-
+	@sed -i "/FW_PAYLOAD_PATH=/d" $(OPENSBI_OBJMK)
 endef
 
 define upload_payload
