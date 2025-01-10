@@ -17,6 +17,7 @@ members = [
     "apps/sintcontext",
     "apps/ssoftint_latency",
     "apps/user_test",
+    "apps/user_sint",
     "utestcases",
 ]
 resolver = "2"
