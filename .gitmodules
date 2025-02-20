@@ -24,3 +24,7 @@
 [submodule "ipc-bench"]
 	path = ipc-bench
 	url = https://github.com/taic-repo/ipc-bench.git
+[submodule "tokio"]
+	path = tokio
+	url = https://github.com/taic-repo/tokio.git
+	branch = taic
