@@ -31,15 +31,15 @@ fn main() {
         unsafe { INT_LATENCY.push(end - START) };
         // println!("user software interrupt");
         LQ.task_dequeue();
-        LQ.register_receiver(1, 5, 0x109);
+        LQ.register_receiver(1, 5, 0, 0x109);
     });
-    LQ.register_receiver(1, 5, 0x109);
+    LQ.register_receiver(1, 5, 0, 0x109);
     let lq1 = TAIC.alloc_lq(1, 5).unwrap();
-    lq1.register_sender(1, 2);
+    lq1.register_sender(1, 2, 0);
     let mut send_softintr_latency = Vec::new();
     for _ in 0..NUM {
         let start = riscv::register::cycle::read();
-        lq1.send_intr(1, 0);
+        lq1.send_intr(1, 0, 0);
         let end = riscv::register::cycle::read();
         send_softintr_latency.push(end - start);
     }
@@ -47,7 +47,7 @@ fn main() {
     println!("---------------------------------");
     for _ in 0..NUM {
         unsafe { START = riscv::register::cycle::read() };
-        lq1.send_intr(1, 2);
+        lq1.send_intr(1, 2, 0);
     }
     println!("Int latencys: {:?}", unsafe { INT_LATENCY.clone() });
 }

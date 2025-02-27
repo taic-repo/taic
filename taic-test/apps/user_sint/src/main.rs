@@ -52,7 +52,7 @@ fn main() {
     let lq0 = TAIC.alloc_lq(1, 0).unwrap();
     LQ.init_by(lq0);
     LQ.whart(axhal::cpu::this_cpu_id());
-    LQ.register_receiver(1, 2, 0x109);
+    LQ.register_receiver(1, 2, 0, 0x109);
 
     axhal::irq::register_handler(axhal::platform::irq::SOFT_IRQ_NUM, || {
         let end = riscv::register::cycle::read();
@@ -63,7 +63,7 @@ fn main() {
             end
         );
         LQ.task_dequeue();
-        LQ.register_receiver(1, 2, 0x109);
+        LQ.register_receiver(1, 2, 0, 0x109);
     });
     run_test("usint");
 }

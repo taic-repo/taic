@@ -894,6 +894,19 @@ version = "0.1.0"
 source = "git+https://github.com/Starry-OS/memory_addr.git#a5be547a3109f114994d005b893f9b19c2616709"
 
 [[package]]
+name = "multi_soft"
+version = "0.1.0"
+dependencies = [
+ "axconfig",
+ "axhal",
+ "axstd",
+ "lazy_init",
+ "log",
+ "riscv 0.7.0",
+ "taic-driver",
+]
+
+[[package]]
 name = "nb"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"

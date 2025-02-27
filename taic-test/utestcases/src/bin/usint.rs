@@ -12,13 +12,13 @@ extern crate utestcases;
 
 fn main() {
     let lq0 = TAIC.alloc_lq(1, 2).unwrap();
-    lq0.register_sender(1, 0);
+    lq0.register_sender(1, 0, 0);
     let timestamp = 0x200_0000 as *mut usize;
     for _ in 0..NUM {
         unsafe {
             *timestamp = riscv::register::cycle::read();
         }
-        lq0.send_intr(1, 0);
+        lq0.send_intr(1, 0, 0);
     }
     let mut u2s2u = Vec::new();
     for _ in 0..NUM {

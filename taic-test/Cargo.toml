@@ -16,6 +16,7 @@ members = [
     "apps/sextint_latency",
     "apps/sintcontext",
     "apps/ssoftint_latency",
+    "apps/multi_soft",
     "apps/user_test",
     "apps/user_sint",
     "utestcases",
