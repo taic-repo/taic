@@ -3,7 +3,7 @@ include scripts/opensbi.mk
 include scripts/fpga.mk
 
 TEST_DIR = taic-test
-A ?= apps/taic_test
+A ?= apps/enq_deq_test
 ARCH ?= riscv64
 
 QEMU = taic-qemu/build/qemu-system-$(ARCH)
